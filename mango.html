@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="IEC Oasis Oujimaの看板メニュー、台湾式ふわふわマンゴーかき氷。とろける氷に、濃密なマンゴー果肉とシャーベット、練乳を重ねた黄金のひと山。沖縄・奥武島で。">
+<meta property="og:title" content="MANGO | 台湾式ふわふわマンゴーかき氷 | IEC Oasis Oujima">
+<meta property="og:description" content="とろける氷に、濃密なマンゴー。沖縄・奥武島で味わう、黄金のひと山。">
+<meta property="og:image" content="images/mango-lp/hero-16x9.jpg">
+<meta name="theme-color" content="#0a0806">
+<title>MANGO | 台湾式ふわふわマンゴーかき氷 | IEC Oasis Oujima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Noto+Serif+JP:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/mango.css">
+</head>
+<body class="mg is-loading">
+
+<!-- ローディング -->
+<div class="mg-loader" id="loader" aria-hidden="true">
+  <div class="mg-loader__inner">
+    <span class="mg-loader__label">IEC Oasis Oujima presents</span>
+    <span class="mg-loader__count"><span id="loaderCount">0</span><small>%</small></span>
+    <span class="mg-loader__bar"><i id="loaderBar"></i></span>
+  </div>
+</div>
+
+<div class="mg-grain" aria-hidden="true"></div>
+<div class="mg-progress" aria-hidden="true"><i id="progress"></i></div>
+<div class="mg-cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+<header class="mg-header" id="header">
+  <a class="mg-logo" href="index.html">IEC Oasis <em>Oujima</em></a>
+  <nav class="mg-nav" aria-label="ページ内ナビゲーション">
+    <a href="#anatomy">Anatomy</a>
+    <a href="#menu">Menu</a>
+    <a href="#place">Place</a>
+    <a class="mg-btn mg-btn--sm" href="#place" data-magnetic>食べに行く</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="mg-hero" id="top">
+    <div class="mg-hero__media" id="heroMedia">
+      <!-- 動画: images/mango-lp/hero-16x9.mp4(PC)/ hero-9x16.mp4(スマホ)。無い場合は背景画像を表示 -->
+      <video class="mg-hero__video" id="heroVideo" muted loop playsinline preload="none"
+        data-src-wide="images/mango-lp/hero-16x9.mp4"
+        data-src-tall="images/mango-lp/hero-9x16.mp4"></video>
+    </div>
+    <div class="mg-hero__shade" aria-hidden="true"></div>
+
+    <div class="mg-hero__content" id="heroContent">
+      <p class="mg-eyebrow mg-hero__eyebrow"><span>Signature Shaved Ice</span><span class="mg-rule"></span><span>No.01</span></p>
+      <h1 class="mg-hero__title" aria-label="MANGO マンゴーかき氷">
+        <span class="mg-hero__word" aria-hidden="true">
+          <span style="--i:0">M</span><span style="--i:1">A</span><span style="--i:2">N</span><span style="--i:3">G</span><span style="--i:4">O</span>
+        </span>
+      </h1>
+      <p class="mg-hero__catch">黄金の、ひと山。</p>
+      <p class="mg-hero__sub">台湾式ふわふわ氷 × マンゴー × 練乳</p>
+      <div class="mg-hero__cta">
+        <a class="mg-btn" href="#menu" data-magnetic>メニューを見る</a>
+        <p class="mg-hero__price"><span>Special</span><strong>¥950</strong></p>
+      </div>
+    </div>
+
+    <a class="mg-scroll" href="#statement" aria-label="下へスクロール"><span>Scroll</span><i></i></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="mg-marquee" aria-hidden="true">
+    <div class="mg-marquee__track" id="marquee">
+      <span>Mango <b>✦</b> Taiwan Style Shaved Ice <b>✦</b> Oujima Okinawa <b>✦</b> Condensed Milk <b>✦</b> Pure Gold <b>✦</b>&nbsp;</span>
+      <span>Mango <b>✦</b> Taiwan Style Shaved Ice <b>✦</b> Oujima Okinawa <b>✦</b> Condensed Milk <b>✦</b> Pure Gold <b>✦</b>&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- STATEMENT -->
+  <section class="mg-statement" id="statement">
+    <p class="mg-eyebrow">The Statement</p>
+    <p class="mg-statement__text" id="statementText">口に入れた瞬間、ほどける氷。追いかけてくる、濃密なマンゴーの甘さ。台湾と沖縄、ふたつの島の恵みが出会った、IEC&nbsp;Oasisの看板メニュー。</p>
+  </section>
+
+  <!-- ANATOMY(スクロール固定演出) -->
+  <section class="mg-anatomy" id="anatomy">
+    <div class="mg-anatomy__sticky">
+      <div class="mg-anatomy__bgword" id="anatomyWord" aria-hidden="true">GOLD</div>
+      <div class="mg-anatomy__glow" aria-hidden="true"></div>
+
+      <div class="mg-anatomy__head">
+        <p class="mg-eyebrow">Anatomy of Gold</p>
+        <h2 class="mg-h2">一杯を、<br>解剖する。</h2>
+      </div>
+
+      <div class="mg-anatomy__stage">
+        <img class="mg-anatomy__product" id="product" src="images/ice-menu/img-mango.png" width="1181" height="1298" alt="IEC Oasis Oujimaのマンゴーかき氷。ふわふわの氷にマンゴー果肉とシャーベット、練乳がかかっている">
+      </div>
+
+      <ol class="mg-anatomy__points" id="points">
+        <li class="is-active">
+          <span class="mg-anatomy__num">01</span>
+          <div>
+            <h3>マンゴー果肉</h3>
+            <p>ごろっと大きくカットした果肉を、惜しみなく。噛むたびに南国の香りがはじけます。</p>
+          </div>
+        </li>
+        <li>
+          <span class="mg-anatomy__num">02</span>
+          <div>
+            <h3>シャーベット</h3>
+            <p>ひんやり爽やかなシャーベットを添えて。濃厚さの中に、軽やかな余韻を。</p>
+          </div>
+        </li>
+        <li>
+          <span class="mg-anatomy__num">03</span>
+          <div>
+            <h3>台湾式ふわふわ氷</h3>
+            <p>薄く、リボンのように削り重ねた氷。口に入れた瞬間、雪のようにほどけます。</p>
+          </div>
+        </li>
+        <li>
+          <span class="mg-anatomy__num">04</span>
+          <div>
+            <h3>練乳</h3>
+            <p>仕上げに、とろりと練乳を。マンゴーの酸味をまろやかに包み込みます。</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="mg-anatomy__meter" aria-hidden="true"><i id="anatomyMeter"></i></div>
+    </div>
+  </section>
+
+  <!-- CRAFT -->
+  <section class="mg-craft">
+    <div class="mg-craft__head rv">
+      <p class="mg-eyebrow">Crafted in Layers</p>
+      <h2 class="mg-h2">重ねるほどに、<br><em>贅沢に。</em></h2>
+    </div>
+
+    <article class="mg-craft__item">
+      <figure class="mg-craft__fig rv-clip">
+        <img src="images/mango-lp/mango.jpg" width="1280" height="1600" alt="" data-parallax="0.12" loading="lazy">
+      </figure>
+      <div class="mg-craft__text rv">
+        <span class="mg-craft__idx">— 01</span>
+        <h3>とろける、<br>黄金色の果肉。</h3>
+        <p>濃密な甘さと、ほのかな酸味。果肉のひと粒ひと粒が、この一杯の主役です。</p>
+      </div>
+    </article>
+
+    <article class="mg-craft__item mg-craft__item--rev">
+      <figure class="mg-craft__fig rv-clip">
+        <img src="images/mango-lp/ice.jpg" width="1280" height="1600" alt="" data-parallax="0.12" loading="lazy">
+      </figure>
+      <div class="mg-craft__text rv">
+        <span class="mg-craft__idx">— 02</span>
+        <h3>絹のように、<br>ほどける氷。</h3>
+        <p>台湾式の削り方で生まれる、リボン状の薄い氷。ふわりと軽い、やさしい口どけです。</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- SPLASH BANNER -->
+  <section class="mg-splash" aria-label="Pure Gold">
+    <div class="mg-splash__bg" data-parallax="0.25" aria-hidden="true"></div>
+    <div class="mg-splash__inner">
+      <p class="mg-splash__big rv"><span>ONE BITE.</span><span class="mg-outline">PURE GOLD.</span></p>
+      <p class="mg-splash__jp rv">この一杯のために、島へ渡る。</p>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="mg-menu" id="menu">
+    <div class="mg-menu__head rv">
+      <p class="mg-eyebrow">Choose Your Gold</p>
+      <h2 class="mg-h2">ふたつの、<br>マンゴー。</h2>
+    </div>
+
+    <div class="mg-menu__grid">
+      <article class="mg-card mg-card--special rv" data-tilt>
+        <div class="mg-card__shine" aria-hidden="true"></div>
+        <p class="mg-card__tag">Special</p>
+        <h3 class="mg-card__name">マンゴー <small>スペシャル</small></h3>
+        <ul class="mg-card__list">
+          <li>マンゴー果肉</li>
+          <li>シャーベット</li>
+          <li>練乳</li>
+        </ul>
+        <p class="mg-card__price"><span>¥</span>950</p>
+        <p class="mg-card__note">具だくさんトッピングの、看板の一杯。</p>
+      </article>
+
+      <article class="mg-card rv" data-tilt>
+        <div class="mg-card__shine" aria-hidden="true"></div>
+        <p class="mg-card__tag">Simple</p>
+        <h3 class="mg-card__name">マンゴー <small>シンプル</small></h3>
+        <ul class="mg-card__list">
+          <li>練乳</li>
+        </ul>
+        <p class="mg-card__price"><span>¥</span>700</p>
+        <p class="mg-card__note">トッピング控えめで、氷の口どけを味わう。</p>
+      </article>
+    </div>
+
+    <p class="mg-menu__more rv"><a class="mg-link" href="menu.html#kakigori-menu">ほかのかき氷メニューを見る <span>→</span></a></p>
+  </section>
+
+  <!-- PLACE -->
+  <section class="mg-place" id="place">
+    <figure class="mg-place__fig rv-clip">
+      <img src="images/mango-lp/oujima.jpg" width="1280" height="1600" alt="夕暮れの島とエメラルドの海(イメージ)" data-parallax="0.1" loading="lazy">
+      <figcaption>※画像はイメージです</figcaption>
+    </figure>
+    <div class="mg-place__body">
+      <p class="mg-eyebrow rv">Only at Oujima</p>
+      <h2 class="mg-h2 rv">海を渡った、<br>その先で。</h2>
+      <dl class="mg-place__info rv">
+        <div><dt>Shop</dt><dd>IEC Oasis Oujima</dd></div>
+        <div><dt>Address</dt><dd>沖縄県南城市玉城字奥武14番地 1F</dd></div>
+        <div><dt>Open</dt><dd>平日 12:00 – 17:00(定休日:木曜日)<br>土日祝 11:00 – 17:00</dd></div>
+        <div><dt>Tel</dt><dd><a href="tel:08017517686">080-1751-7686</a></dd></div>
+      </dl>
+      <div class="mg-place__cta rv">
+        <a class="mg-btn" href="https://maps.app.goo.gl/voPFWVJ7KBdVcmAC6" target="_blank" rel="noopener" data-magnetic>Googleマップで見る</a>
+        <a class="mg-link" href="index.html#access">アクセス・お問合せ <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="mg-final">
+    <p class="mg-final__big rv" aria-label="MANGO">MANGO</p>
+    <p class="mg-final__jp rv">今日のご褒美は、黄金色。</p>
+  </section>
+
+</main>
+
+<footer class="mg-footer">
+  <a class="mg-logo" href="index.html">IEC Oasis <em>Oujima</em></a>
+  <ul>
+    <li><a href="index.html">TOP</a></li>
+    <li><a href="menu.html">メニュー</a></li>
+    <li><a href="service.html">サービス</a></li>
+  </ul>
+  <p class="mg-footer__copy">&copy; 2026 IEC Oasis Oujima</p>
+</footer>
+
+<script src="js/mango.js"></script>
+</body>
+</html>
